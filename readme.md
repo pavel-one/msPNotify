@@ -12,5 +12,6 @@
 
 ## Сборка компонента
 
-1.В файле build.config.php в 4 строке замените абсолютный путь до config.ini.php
-2.Запустите build.transport.php после чего в папке packages появится собранный пакет
+1. В файле build.config.php в 4 строке замените абсолютный путь до config.ini.php
+
+2. Запустите build.transport.php после чего в папке packages появится собранный пакет
