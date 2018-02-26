@@ -1,0 +1,17 @@
+[2018-02-26 23:21:29] (INFO @ /home/modstore/web/devmod.cms.pavel.one/public_html/core/model/modx/transport/modpackagebuilder.class.php : 141) Создан новый пакет с подписью: mspnnotify-1.0.0-beta
+[2018-02-26 23:21:29] (INFO @ /home/modstore/web/devmod.cms.pavel.one/public_html/core/model/modx/transport/modpackagebuilder.class.php : 212) Зарегистрировано пространство имён пакета: mspnnotify
+[2018-02-26 23:21:29] (INFO @ /home/modstore/web/devmod.cms.pavel.one/public_html/core/model/modx/transport/modpackagebuilder.class.php : 232) Пространство имён «mspnnotify» упаковано в пакет.
+[2018-02-26 23:21:29] (INFO @ /home/modstore/web/devmod.cms.pavel.one/public_html/assets/components/cmpgeneratorpro/build/_build_mspnnotify/build.transport.php : 75) Packaged in mspnnotify namespace.
+[2018-02-26 23:21:29] (INFO @ /home/modstore/web/devmod.cms.pavel.one/public_html/assets/components/cmpgeneratorpro/build/_build_mspnnotify/build.transport.php : 82) Packaged in category.
+[2018-02-26 23:21:29] (INFO @ /home/modstore/web/devmod.cms.pavel.one/public_html/assets/components/cmpgeneratorpro/build/_build_mspnnotify/build.transport.php : 101) Packaged in 1 plugins.
+[2018-02-26 23:21:29] (INFO @ /home/modstore/web/devmod.cms.pavel.one/public_html/assets/components/cmpgeneratorpro/build/_build_mspnnotify/build.transport.php : 118) Packaged in 0 System Settings.
+[2018-02-26 23:21:29] (INFO @ /home/modstore/web/devmod.cms.pavel.one/public_html/assets/components/cmpgeneratorpro/build/_build_mspnnotify/build.transport.php : 181) Packaged in CorePath
+[2018-02-26 23:21:29] (INFO @ /home/modstore/web/devmod.cms.pavel.one/public_html/assets/components/cmpgeneratorpro/build/_build_mspnnotify/build.transport.php : 187) Packaged in AssetsPath
+[2018-02-26 23:21:29] (INFO @ /home/modstore/web/devmod.cms.pavel.one/public_html/assets/components/cmpgeneratorpro/build/_build_mspnnotify/build.transport.php : 190) Adding in PHP resolvers...
+[2018-02-26 23:21:29] (INFO @ /home/modstore/web/devmod.cms.pavel.one/public_html/assets/components/cmpgeneratorpro/build/_build_mspnnotify/build.transport.php : 203) Packaged in resolvers.
+[2018-02-26 23:21:29] (INFO @ /home/modstore/web/devmod.cms.pavel.one/public_html/assets/components/cmpgeneratorpro/build/_build_mspnnotify/build.transport.php : 215) Packaged in package attributes.
+[2018-02-26 23:21:29] (INFO @ /home/modstore/web/devmod.cms.pavel.one/public_html/assets/components/cmpgeneratorpro/build/_build_mspnnotify/build.transport.php : 217) Packing...
+[2018-02-26 23:21:29] (INFO @ /home/modstore/web/devmod.cms.pavel.one/public_html/assets/components/cmpgeneratorpro/build/_build_mspnnotify/build.transport.php : 227) 
+Package Built.
+Execution time: 0,1875 s
+

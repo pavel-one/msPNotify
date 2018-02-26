@@ -1,0 +1,5 @@
+Changelog for msPNnotify integration into MODx Revolution.
+
+msPNnotify 1.0.0
+====================================
+- First release
