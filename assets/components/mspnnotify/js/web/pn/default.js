@@ -153,3 +153,35 @@ modPNotify.Confirm = {
 };
 
 modPNotify.initialize();
+
+if (typeof(miniShop2) != 'undefined') {
+    miniShop2.Message = {
+        initialize: function () {
+            miniShop2.Message.close = function () {
+            };
+            miniShop2.Message.show = function (message) {
+                if (message != '') {
+                    alert(message);
+                }
+            };
+        },
+        success: function (message) {
+            miniShop2.Message.show(message, {
+                theme: 'ms2-message-success',
+                sticky: false
+            });
+        },
+        error: function (message) {
+            miniShop2.Message.show(message, {
+                theme: 'ms2-message-error',
+                sticky: false
+            });
+        },
+        info: function (message) {
+            miniShop2.Message.show(message, {
+                theme: 'ms2-message-info',
+                sticky: false
+            });
+        }
+    };
+}

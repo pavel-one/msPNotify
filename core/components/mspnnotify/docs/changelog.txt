@@ -1,5 +1,7 @@
-Changelog for msPNnotify integration into MODx Revolution.
+msPNnotify 1.1.0
+====================================
+- Исправлен js файл, теперь он не заменяет стандартный минишоповский js, а лишь переписывает метод Message
 
 msPNnotify 1.0.0
 ====================================
-- First release
+- Релиз

@@ -3,7 +3,7 @@ error_reporting(E_ALL ^E_NOTICE);
 ini_set('display_errors', true);
 
 
-$pkg_version = '1.0.0';
+$pkg_version = '1.1.0';
 $pkg_release = 'beta';
 define('PKG_VERSION', $pkg_version); 
 define('PKG_RELEASE', $pkg_release); 
