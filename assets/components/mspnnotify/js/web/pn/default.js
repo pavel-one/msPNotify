@@ -154,34 +154,64 @@ modPNotify.Confirm = {
 
 modPNotify.initialize();
 
-if (typeof(miniShop2) != 'undefined') {
-    miniShop2.Message = {
-        initialize: function () {
-            miniShop2.Message.close = function () {
-            };
-            miniShop2.Message.show = function (message) {
-                if (message != '') {
-                    alert(message);
+jQuery(document).ready(function($) {
+	if (typeof(miniShop2) != 'undefined') {
+        miniShop2.Message = {
+            initialize: function() {
+                miniShop2.Message.close = function() {};
+                miniShop2.Message.show = function(message) {
+                    if (message != '') {
+                        alert(message);
+                    }
+                };
+    
+    
+                miniShop2.Message.close = function() {
+                    PNotify.removeAll()
+                };
+                miniShop2.Message.show = function(message, options) {
+                    if (message != '') {
+                        new PNotify(options);
+                    }
                 }
-            };
-        },
-        success: function (message) {
-            miniShop2.Message.show(message, {
-                theme: 'ms2-message-success',
-                sticky: false
-            });
-        },
-        error: function (message) {
-            miniShop2.Message.show(message, {
-                theme: 'ms2-message-error',
-                sticky: false
-            });
-        },
-        info: function (message) {
-            miniShop2.Message.show(message, {
-                theme: 'ms2-message-info',
-                sticky: false
-            });
-        }
-    };
-}
+    
+            },
+            success: function(message) {
+                miniShop2.Message.show(message, {
+                    addclass: 'modPNotify-message',
+            		styling: 'brighttheme',
+            		icons: 'brighttheme',
+                    delay: 2000,
+                    text: message,
+                    type: 'success',
+                    title: 'Успешно',
+                    hide: true,
+                });
+            },
+            error: function(message) {
+                miniShop2.Message.show(message, {
+                    addclass: 'modPNotify-message',
+            		styling: 'brighttheme',
+            		icons: 'brighttheme',
+                    delay: 2000,
+                    text: message,
+                    type: 'error',
+                    title: 'Ошибка',
+                    hide: true,
+                });
+            },
+            info: function(message) {
+                miniShop2.Message.show(message, {
+                    addclass: 'modPNotify-message',
+            		styling: 'brighttheme',
+            		icons: 'brighttheme',
+                    delay: 2000,
+                    text: message,
+                    type: 'info',
+                    title: 'Внимание',
+                    hide: true,
+                });
+            }
+        };
+	}
+});
