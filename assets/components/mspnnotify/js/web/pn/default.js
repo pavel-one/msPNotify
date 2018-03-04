@@ -21,14 +21,6 @@ modPNotifyConfig = {
 
 modPNotify = {
 	initialize: function () {
-		if (!jQuery().pnotify) {
-			document.write('<script src="' + modPNotifyConfig.assetsUrl + 'pnotify.custom.js"><\/script>');
-			$('<link/>', {
-				rel: 'stylesheet',
-				type: 'text/css',
-				href: modPNotifyConfig.assetsUrl + 'pnotify.custom.css'
-			}).appendTo('head');
-		}
 
 		$(document).ready(function () {
 			PNotify.prototype.options.styling = "brighttheme";
@@ -213,5 +205,43 @@ jQuery(document).ready(function($) {
                 });
             }
         };
+	}
+	if (typeof(Office) != 'undefined') {
+		Office.Message = {
+		    success: function (message, sticky) {
+		        modPNotify.Message.success('',message);
+		    },
+		    error: function (message, sticky) {
+		        modPNotify.Message.error('',message);
+		    },
+		    info: function (message, sticky) {
+		        modPNotify.Message.info('',message);
+		    },
+		    close: function () {
+		        PNotify.removeAll();
+		    }
+		};
+	}
+	if (typeof(AjaxForm) != 'undefined') {
+		AjaxForm.Message = {
+		    success: function (message, sticky) {
+		        if (message) {
+		            modPNotify.Message.success('',message);
+		        }
+		    },
+		    error: function (message, sticky) {
+		        if (message) {
+		            modPNotify.Message.error('',message);
+		        }
+		    },
+		    info: function (message, sticky) {
+		        if (message) {
+		            modPNotify.Message.info('',message);
+		        }
+		    },
+		    close: function () {
+		        PNotify.removeAll();
+		    },
+		};
 	}
 });

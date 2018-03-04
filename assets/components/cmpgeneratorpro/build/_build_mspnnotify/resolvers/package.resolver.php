@@ -8,12 +8,13 @@ if ($object->xpdo) {
     $modx =& $object->xpdo;
     switch ($options[xPDOTransport::PACKAGE_ACTION]) {
         case xPDOTransport::ACTION_INSTALL:
-            $modx->addExtensionPackage('mspnnotify', '[[++core_path]]components/mspnnotify/model/');
+            //$modx->addExtensionPackage('mspnnotify', '[[++core_path]]components/mspnnotify/model/');
             break;
         case xPDOTransport::ACTION_UPGRADE:
+            $modx->removeExtensionPackage('mspnnotify');
             break;
         case xPDOTransport::ACTION_UNINSTALL:
-            $modx->removeExtensionPackage('mspnnotify');
+            //$modx->removeExtensionPackage('mspnnotify');
             break;
     }
 }
