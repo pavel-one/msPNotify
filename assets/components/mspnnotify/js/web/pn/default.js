@@ -240,7 +240,7 @@ jQuery(document).ready(function($) {
 		        }
 		    },
 		    close: function () {
-		        PNotify.removeAll();
+		        //PNotify.removeAll();
 		    },
 		};
 	}
